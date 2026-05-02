@@ -1,15 +1,20 @@
 /* ─────────────── TELEGRAM CONFIG ─────────────── */
-// config.js dan keladi — bu yerga yozmang!
 const TG_BOT_TOKEN = ENV.TG_BOT_TOKEN;
 const TG_CHAT_ID   = ENV.TG_CHAT_ID;
 /* ──────────────────────────────────────────────── */
 
+/* ── JS yuklandi — animatsiyalarni yoq ── */
+document.documentElement.classList.add('js-ready');
+
 /* ── Scroll reveal ── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add('visible');
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target); // bir marta bajarsa yetarli
+    }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
