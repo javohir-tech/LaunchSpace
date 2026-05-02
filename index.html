@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaunchSpace — Imkoniyatlarni birgalikda yaratamiz</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Launch<span>Space</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Biz haqimizda</a></li>
+    <li><a href="#success">Muvaffaqqiyat</a></li>
+    <li><a href="#startup">Start-up</a></li>
+    <li><a href="#contact">Kontaktlar</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Bog'lanish</a>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-geo">
+    <div class="geo-shape geo-1"></div>
+    <div class="geo-shape geo-2"></div>
+    <div class="geo-shape geo-3"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge reveal"><i class="fa-solid fa-rocket"></i> LaunchSpace platformasi</div>
+      <h1 class="hero-h1 reveal reveal-delay-1">
+        Imkoniyatlarni<br>
+        <em>birgalikda</em><br>
+        yaratamiz
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Startaplar va investorlarni bog'lovchi platforma. Biznesingizni o'sishga olib boring — hamkor toping, g'oyangizni hayotga keltiring.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <button class="btn-primary" onclick="scrollTo('#contact')">Ro'yxatdan o'tish</button>
+        <button class="btn-outline" onclick="scrollTo('#about')">Batafsil &rarr;</button>
+      </div>
+    </div>
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="hero-card-stack">
+        <div class="hcard hcard-1">
+          <div class="hcard-label">Startaplar</div>
+          <div class="hcard-value">480+</div>
+          <div class="hcard-desc">Muvaffaqqiyatli loyihalar</div>
+        </div>
+        <div class="hcard hcard-2">
+          <div class="hcard-label">Investorlar</div>
+          <div class="hcard-value">120+</div>
+          <div class="hcard-desc">Ishonchli hamkorlar</div>
+        </div>
+        <div class="hcard hcard-3">
+          <div class="hcard-label">O'sish</div>
+          <div class="hcard-value">3×</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <span class="section-tag reveal">Biz haqimizda</span>
+        <h2 class="section-h2 reveal reveal-delay-1">Startaplarga <em>qanotlar</em> beramiz</h2>
+        <div class="divider reveal reveal-delay-1"></div>
+        <p class="section-lead reveal reveal-delay-2">
+          LaunchSpace — startapchilar va investorlarni birlashtiruvchi ekosistem. Biz faqat platforma emas, sizning o'sishingiz uchun ishlaydigan jamoamiz.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box reveal reveal-delay-2">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Yillik tajriba</div>
+          </div>
+          <div class="stat-box reveal reveal-delay-3">
+            <div class="stat-num">$12M+</div>
+            <div class="stat-label">Jalb etilgan investitsiya</div>
+          </div>
+          <div class="stat-box reveal reveal-delay-2">
+            <div class="stat-num">94%</div>
+            <div class="stat-label">Mijozlar mamnuniyati</div>
+          </div>
+          <div class="stat-box reveal reveal-delay-3">
+            <div class="stat-num">32+</div>
+            <div class="stat-label">Mamlakatlar</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal reveal-delay-1">
+        <div class="about-block ab1">
+          <div class="ab-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="ab-title">G'oya</div>
+          <div class="ab-body">Har bir buyuk biznes bitta g'oyadan boshlanadi. Biz uni rivojlantiramiz.</div>
+        </div>
+        <div class="about-block ab2">
+          <div class="ab-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div class="ab-title">Hamkorlik</div>
+          <div class="ab-body">To'g'ri investorni topish endi oson.</div>
+        </div>
+        <div class="about-block ab3">
+          <div class="ab-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="ab-title" style="font-size:.95rem; color:#fff">O'sish</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SUCCESS STORIES ── -->
+<section id="success">
+  <div class="section-inner">
+    <span class="section-tag reveal">Muvaffaqqiyat hikoyalari</span>
+    <h2 class="section-h2 reveal reveal-delay-1">Ular <em>muvaffaq bo'ldi</em></h2>
+    <div class="divider reveal reveal-delay-1"></div>
+    <p class="section-lead reveal reveal-delay-2">Platformamiz orqali o'sgan kompaniyalar tajribasidan ilhomlanin.</p>
+    <div class="success-grid">
+      <div class="success-card reveal reveal-delay-1">
+        <div class="sc-top">
+          <div class="sc-avatar" style="background:#1a56db">LC</div>
+          <div class="sc-meta">
+            <div class="sc-name">LiiA Corporation</div>
+            <div class="sc-role">Texnologiya startapi</div>
+          </div>
+        </div>
+        <p class="sc-quote">"LaunchSpace orqali biz kerakli investorni 2 oyda topdik. Hozir 12 ta mamlakatda ishlaymiz."</p>
+        <div class="sc-result"><strong>$2.4M</strong> investitsiya jalb qilindi</div>
+      </div>
+      <div class="success-card reveal reveal-delay-2">
+        <div class="sc-top">
+          <div class="sc-avatar" style="background:#e85d2f">AI</div>
+          <div class="sc-meta">
+            <div class="sc-name">Asterisk Industries</div>
+            <div class="sc-role">SaaS startap</div>
+          </div>
+        </div>
+        <p class="sc-quote">"Platforma bizga nafaqat mablag', balki tajribali mentorlarni ham tanishtirdi. Jamoamiz uch baravar o'sdi."</p>
+        <div class="sc-result"><strong>320%</strong> yillik o'sish</div>
+      </div>
+      <div class="success-card reveal reveal-delay-3">
+        <div class="sc-top">
+          <div class="sc-avatar" style="background:#0f766e">GV</div>
+          <div class="sc-meta">
+            <div class="sc-name">GreenVest</div>
+            <div class="sc-role">GreenTech startapi</div>
+          </div>
+        </div>
+        <p class="sc-quote">"LaunchSpace ekosistemi bizga global bozorga chiqish uchun eng tezkor yo'l bo'ldi."</p>
+        <div class="sc-result"><strong>14</strong> mamlakatga eksport</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STARTUP ── -->
+<section id="startup">
+  <div class="section-inner">
+    <span class="section-tag reveal">Start-up yo'nalish</span>
+    <h2 class="section-h2 reveal reveal-delay-1">Startapingizni <em>boshlang</em></h2>
+    <div class="divider reveal reveal-delay-1"></div>
+    <p class="section-lead reveal reveal-delay-2">To'rtta asosiy bosqich orqali g'oyangizni real biznesga aylantiring.</p>
+    <div class="startup-grid">
+      <div class="startup-card reveal reveal-delay-1">
+        <div class="sc-num">01</div>
+        <div class="sc-icon-box"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>G'oya va Validatsiya</h3>
+        <p>Bozor tahlili va raqobat muhitini o'rganib, g'oyangizni sinovdan o'tkazing. MVP yaratishga yordam beramiz.</p>
+      </div>
+      <div class="startup-card reveal reveal-delay-2">
+        <div class="sc-num">02</div>
+        <div class="sc-icon-box"><i class="fa-solid fa-coins"></i></div>
+        <h3>Moliyalashtirish</h3>
+        <p>Investorlar bazamizdan eng mos hamkorni toping. Pitch deck tayyorlashdan tortib muzokaralargacha qo'llab-quvvatlaymiz.</p>
+      </div>
+      <div class="startup-card reveal reveal-delay-3">
+        <div class="sc-num">03</div>
+        <div class="sc-icon-box"><i class="fa-solid fa-rocket"></i></div>
+        <h3>Launchpad</h3>
+        <p>Mahsulotingizni bozorga chiqarish strategiyasi. Marketing, PR va brendingda mutaxassislar jamoasi bilan ishlang.</p>
+      </div>
+      <div class="startup-card reveal reveal-delay-4">
+        <div class="sc-num">04</div>
+        <div class="sc-icon-box"><i class="fa-solid fa-chart-bar"></i></div>
+        <h3>O'sish va Shkalalanish</h3>
+        <p>KPI larni kuzatish, jamoani kengaytirish va yangi bozorlarga chiqish bo'yicha strategik yo'nalish oling.</p>
+      </div>
+    </div>
+    <div class="startup-cta reveal">
+      <button class="btn-accent" onclick="scrollTo('#contact')">Start-upingizni LS bilan boshlang →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <span class="section-tag reveal">Biz bilan bog'laning</span>
+        <h2 class="section-h2 reveal reveal-delay-1">Gaplashaylik <em>bugun</em></h2>
+        <div class="divider reveal reveal-delay-1"></div>
+        <p class="section-lead reveal reveal-delay-2">Savollaringiz bormi? Loyihangizni muhokama qilmoqchimisiz? Biz 24 soat ichida javob beramiz.</p>
+        <div class="contact-item reveal reveal-delay-2">
+          <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="ci-label">Telefon</div>
+            <div class="ci-val">+82 105 532 7771</div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-3">
+          <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="ci-label">Email</div>
+            <div class="ci-val">launchspace@co.org</div>
+          </div>
+        </div>
+        <div class="contact-item reveal reveal-delay-4">
+          <div class="ci-icon"><i class="fa-brands fa-telegram"></i></div>
+          <div>
+            <div class="ci-label">Telegram</div>
+            <div class="ci-val">@launchspace_support</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <h3 style="font-family:var(--ff-head);font-size:1.5rem;font-weight:400;margin-bottom:1.5rem">Xabar yuboring</h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Ism va familiya</label>
+            <input type="text" id="name" placeholder="Masalan: Jasur Rahimov" required>
+          </div>
+          <div class="form-group">
+            <label>Elektron pochta</label>
+            <input type="email" id="email" placeholder="email@misol.com" required>
+          </div>
+          <div class="form-group">
+            <label>Xabaringiz</label>
+            <textarea id="message" placeholder="Loyihangiz yoki savolingiz haqida yozing..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submitBtn">Yuborish →</button>
+        </form>
+        <div class="form-status" id="formStatus"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">Launch<span style="color:var(--accent)">Space</span></div>
+        <p>Startaplar va investorlarni birlashtiruvchi ekosistem. Biznesingizni o'sishga olib boring.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sayt xaritasi</h4>
+        <ul>
+          <li><a href="#">Bosh sahifa</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#success">Muvaffaqqiyat hikoyalari</a></li>
+          <li><a href="#startup">Start-up</a></li>
+          <li><a href="#contact">Biz bilan bog'laning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontaktlar</h4>
+        <ul>
+          <li><a href="tel:+821055327771">+82 105 532 7771</a></li>
+          <li><a href="mailto:launchspace@co.org">launchspace@co.org</a></li>
+          <li><a href="#">@launchspace_support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 LiiA Corp. kompaniyasi. Barcha huquqlar himoyalangan.</p>
+      <p>LaunchSpace — <a href="#" style="color:rgba(255,255,255,.5)">Find the partners with the same goal</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts: config.js BIRINCHI bo'lishi shart! -->
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
